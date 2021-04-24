@@ -7,8 +7,9 @@ import {initialValues} from './initialValues';
 
 const ContactForm = ({onSubmit}) => {
 
-    const handleSubmit = (values) => {
+    const handleSubmit = (values, {resetForm}) => {
         onSubmit(values);
+        resetForm();
     }
 
     return (
